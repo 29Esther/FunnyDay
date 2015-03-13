@@ -1,0 +1,62 @@
+body{
+    font: 14px/24px "Microsoft YaHei","Arial",sans-serif;
+    background:#FFF;
+    color: #222222;
+    margin:0;
+    padding:0;
+}
+#fl,#fr {
+    display:inline;
+}
+#fl {
+	margin-top: 10px;
+    float:left;
+}
+#fr {
+    float:right;
+}
+#header {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+	background-color: #feb94c;
+}
+#headBox {
+	background-color: #feb94c;
+}
+#fr a {
+	color: #b56523;
+	font-size: 18px;
+	line-height: 60px;
+	display: inline-block;
+	margin-left: 2em;
+	text-decoration: none;
+}
+#fr a:hover, #fr .active {
+	text-decoration: none;
+	color: #ECF0F1;
+}
+#content {
+	width: 960px;
+	position:relative;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.slide-out-div {
+	background-color: #ECF0F1;
+	width: 70px;
+	height: 190px;
+}
+.slide-out-div ul{
+	list-style:none;
+}
+.slide-out-div li{
+	left: -20;
+	margin-bottom: 5px;
+	margin-left: -30px;
+}
+.slide-out-div li a:hover {
+	opacity: 0.6;
+	width: 70%; 
+	height:70%;
+}

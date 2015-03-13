@@ -1,6 +1,7 @@
 body {
     margin:0;
     padding:0;
+    background-color: #FFF;
 }
 
 #head_pic {
@@ -8,19 +9,18 @@ body {
 	width:100%;
 	position:relative;
     text-align:center;
-	background:url(../src/img/top1.JPG) center top no-repeat
+	background-color: #FFF;
 }
 #say_hello {
     position:relative;
     margin:0 auto;
     height:550px;
-    width:auto;
 }
-#cover_hello {
+#cover2 {
+    width:900px;
+    top:210px;
     position:absolute;
-    top:1px;
-    left:317px;
-    opacity: 0,
+    left:200px;
 }
 .icon {
 	width:10%;
