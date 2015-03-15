@@ -1,2 +1,2 @@
 # FunnyDay
-Wish Everyday as Funny as Today.
+Wish Everyday WILL BE as Funny as Today.
