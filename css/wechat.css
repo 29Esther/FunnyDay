@@ -8,7 +8,7 @@
 }
 #Profile {
 	outline-style: double;
-	outline-color: #ECF0F1;
+	outline-color: black;
 	outline-width: 5px; 
 }
 .name {
@@ -30,5 +30,5 @@
 }
 #xpic {
 	margin-top: 20px;
-	border:1em solid #ECF0F1;
+	border:1em solid black;
 }
