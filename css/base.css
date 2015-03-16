@@ -50,6 +50,7 @@ body{
 	background-color: #FFF;
 	width: 70px;
 	height: 190px;
+	z-index:100;
 }
 .slide-out-div ul{
 	list-style:none;
