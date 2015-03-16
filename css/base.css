@@ -24,6 +24,10 @@ body{
 #headBox {
 	background-color: #feb94c;
 }
+#icon {
+	margin-top: 5px;
+	margin-left: 10px;
+}
 #fr a {
 	color: #b56523;
 	font-size: 18px;
@@ -43,7 +47,7 @@ body{
 	overflow: hidden;
 }
 .slide-out-div {
-	background-color: #ECF0F1;
+	background-color: #FFF;
 	width: 70px;
 	height: 190px;
 }

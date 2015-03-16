@@ -29,17 +29,24 @@
 	z-index:100
 }
 #MainText{
-	font-color:#895d1d;
 	padding:20px; 
 	margin:-18px 0 0 0; 
 	width:900px; 
-	height:1200px; 
+	height:1050px; 
 	position:relative;
 	background-color:#fff;
 	border:3px solid #b56523; 
 	z-index: 50
 }
+#MainText a {
+	text-decoration: none;
+}
+#MainText a:hover {
+	text-decoration: none;
+	color: #96E443;
+}
 table {
+	color:#895d1d;
 	font-size: 15px;
 }
 .tr_blank {
@@ -59,6 +66,6 @@ table {
 	text-align:right;
 }
 .description {
-	color:#895d1d;
+	color:#7f7f7f;
 	font-size: 15px;
 }
