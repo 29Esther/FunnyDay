@@ -8,7 +8,7 @@
 </head>
 <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="js/jquery.tabSlideOut.v1.3.js"></script>
-<body>
+<body onload="setImg()">
 	<div id="wrapper">
 		<div id="headBox">
 			<div id="header">
@@ -22,10 +22,81 @@
 		</div>
 		<div id="content">
 			<div id="colourful">
-				
+				<ul class="wrapper">
+					<li class="wrap center" onmouseover="mCenOver(this)" onmouseout="mCenOut(this)">
+						<img src="src/img/earth.png"/>
+					</li>
+					<li class="wrap image">
+						<img src="src/img/lizhixuan1.png"/>
+					</li>
+					<li class="wrap image">
+						<img src="src/img/lizhixuan2.png"/>
+					</li>
+					<li class="wrap image">
+						<img src="src/img/lizhixuan3.png"/>
+					</li>
+					<li class="wrap image">
+						<img src="src/img/lizhixuan1.png"/>
+					</li>
+					<li class="wrap image">
+						<img src="src/img/lizhixuan2.png"/>
+					</li>
+					<li class="wrap image">
+						<img src="src/img/lizhixuan3.png"/>
+					</li>
+					<li class="wrap image">
+						<img src="src/img/lizhixuan1.png"/>
+					</li>
+					<li class="wrap image">
+						<img src="src/img/lizhixuan2.png"/>
+					</li>
+				</ul>
 			</div>
 		</div>
+		<script type="text/javascript">
+		var c = 0;
+		var t;
+		function setImg(){
+			c=c+1;
+			var element = $(".wrapper");
+			var middleX = $(element).width()/2
+			var middleY = $(element).height()/2
+			var imgHeight = $(".wrap.image").height()
+			var imgWidth = $(".wrap.image").width()
+			//中间的图案
+			var center = $(".wrap.center")
+			center.css({'left':middleX-200,'top':middleY-200})
+			var distance = 250
+	
+			//获取图片的数量，并排除中间的圆圈
+			var imgCounts = $('.wrapper').children().length
+			var countsOfImg = imgCounts - 1
+			//角度单位
+			var arcUnit = (2*Math.PI/countsOfImg)
+			var m = 0
+			if ( imgCounts > 0 ){
+				for ( var i = 1 ; i<imgCounts;i++)	
+				{
+					var index = i - 1
+					var imgElement=$(".wrapper>.wrap").eq(i)
+					var leftPositionForImageCenter = middleX + distance*Math.cos(arcUnit*index+c)
+					var topPositionForImageCenter = middleY - distance*Math.sin(arcUnit*index+c)
+					//减去图片的框架
+					leftPositionForImageCenter -= imgWidth/2
+					topPositionForImageCenter  -= imgHeight/2
+					imgElement.css({'left':leftPositionForImageCenter,'top':topPositionForImageCenter})
+				}
+			}
+			t = setTimeout("setImg()",10)
+		}
 
+		function mCenOver() {
+			clearTimeout(t);
+		}	
+		function mCenOut() {
+			t = setTimeout("setImg()",10)
+		}
+		</script>
 	</div>
 	<script type="text/javascript">
 		$(function(){

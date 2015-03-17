@@ -42,8 +42,6 @@ body{
 }
 #content {
 	width: 960px;
-	position:relative;
-	margin: 0 auto;
 	overflow: hidden;
 }
 .slide-out-div {
