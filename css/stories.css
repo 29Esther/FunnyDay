@@ -1,11 +1,23 @@
-.wrapper{
-		top:100px;
-		left: 100px;
+#MainText {
+	width:650px;
+	position: relative;
+	float:right;
+	top:5px;
+}
+#BigImg {
+	position: relative;
+	float: right;
+}
+#longstory {
+
+}
+.colourful{
+		bottom:20px;
+		left: 20px;
 		list-style:none;
-		left:100px;
-		position:absolute;
-		width:600px;
-		height:600px;
+		position:fixed;
+		width:480px;
+		height:460px;
 	}
 	
 	.wrap{
@@ -59,11 +71,11 @@
 }
 
 .wrap.center{
-	animation: spin 5s linear 2s infinite normal;
+	animation: spin 8s linear 2s infinite normal;
 /* Firefox: */
--moz-animation: spin 5s linear 2s infinite normal;
+-moz-animation: spin 8s linear 2s infinite normal;
 /* Safari 和 Chrome: */
--webkit-animation: spin 5s linear 2s infinite normal;
+-webkit-animation: spin 8s linear 2s infinite normal;
 /* Opera: */
--o-animation: spin 5s linear 2s infinite normal;
+-o-animation: spin 8s linear 2s infinite normal;
 	}

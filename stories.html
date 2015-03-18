@@ -21,55 +21,67 @@
 			</div>
 		</div>
 		<div id="content">
-			<div id="colourful">
-				<ul class="wrapper">
-					<li class="wrap center" onmouseover="mCenOver(this)" onmouseout="mCenOut(this)">
-						<img src="src/img/earth.png"/>
-					</li>
-					<li class="wrap image">
-						<img src="src/img/lizhixuan1.png"/>
-					</li>
-					<li class="wrap image">
-						<img src="src/img/lizhixuan2.png"/>
-					</li>
-					<li class="wrap image">
-						<img src="src/img/lizhixuan3.png"/>
-					</li>
-					<li class="wrap image">
-						<img src="src/img/lizhixuan1.png"/>
-					</li>
-					<li class="wrap image">
-						<img src="src/img/lizhixuan2.png"/>
-					</li>
-					<li class="wrap image">
-						<img src="src/img/lizhixuan3.png"/>
-					</li>
-					<li class="wrap image">
-						<img src="src/img/lizhixuan1.png"/>
-					</li>
-					<li class="wrap image">
-						<img src="src/img/lizhixuan2.png"/>
-					</li>
-				</ul>
+		<div id="MainText">
+			<div id="BigImg">
+				<img src="src/img/lizhix1.jpg"/>
+			</div>
+			<div id="longstory">
+				<h1>能说，想说，敢说</h1>
+				努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，努力学习会说，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书，多看书。
 			</div>
 		</div>
+		</div>
+
+		<div>
+			<ul class="colourful">
+				<li class="wrap center" onmouseover="mCenOver(this)" onmouseout="mCenOut(this)">
+					<img src="src/img/earth.png"/>
+				</li>
+				<li class="wrap image" onmouseover="mCenOver(this)" onmouseout="mCenOut(this)" onmousedown="chooseImg(1)">
+					<img src="src/img/lizhixuan1.png"/>
+				</li>
+				<li class="wrap image" onmouseover="mCenOver(this)" onmouseout="mCenOut(this)" onmousedown="chooseImg(2)">
+					<img src="src/img/lizhixuan2.png"/>
+				</li>
+				<li class="wrap image" onmouseover="mCenOver(this)" onmouseout="mCenOut(this)" onmousedown="chooseImg(3)">
+					<img src="src/img/lizhixuan3.png"/>
+				</li>
+				<li class="wrap image" onmouseover="mCenOver(this)" onmouseout="mCenOut(this)" onmousedown="chooseImg(1)">
+					<img src="src/img/lizhixuan1.png"/>
+				</li>
+				<li class="wrap image" onmouseover="mCenOver(this)" onmouseout="mCenOut(this)" onmousedown="chooseImg(2)">
+					<img src="src/img/lizhixuan2.png"/>
+				</li>
+				<li class="wrap image" onmouseover="mCenOver(this)" onmouseout="mCenOut(this)" onmousedown="chooseImg(3)">
+					<img src="src/img/lizhixuan3.png"/>
+				</li>
+				<li class="wrap image" onmouseover="mCenOver(this)" onmouseout="mCenOut(this)" onmousedown="chooseImg(4)">
+					<img src="src/img/lizhixuan1.png"/>
+				</li>
+				<li class="wrap image" onmouseover="mCenOver(this)" onmouseout="mCenOut(this)" onmousedown="chooseImg(1)">
+					<img src="src/img/lizhixuan2.png"/>
+				</li>
+			</ul>
+		</div>
+
 		<script type="text/javascript">
 		var c = 0;
 		var t;
 		function setImg(){
 			c=c+1;
-			var element = $(".wrapper");
+			var element = $(".colourful");
 			var middleX = $(element).width()/2
 			var middleY = $(element).height()/2
 			var imgHeight = $(".wrap.image").height()
 			var imgWidth = $(".wrap.image").width()
 			//中间的图案
 			var center = $(".wrap.center")
-			center.css({'left':middleX-200,'top':middleY-200})
-			var distance = 250
+			var centerH = $(center).height()/2
+			center.css({'left':middleX-centerH,'top':middleY-centerH})
+			var distance = 200
 	
 			//获取图片的数量，并排除中间的圆圈
-			var imgCounts = $('.wrapper').children().length
+			var imgCounts = $('.colourful').children().length
 			var countsOfImg = imgCounts - 1
 			//角度单位
 			var arcUnit = (2*Math.PI/countsOfImg)
@@ -78,16 +90,16 @@
 				for ( var i = 1 ; i<imgCounts;i++)	
 				{
 					var index = i - 1
-					var imgElement=$(".wrapper>.wrap").eq(i)
-					var leftPositionForImageCenter = middleX + distance*Math.cos(arcUnit*index+c)
-					var topPositionForImageCenter = middleY - distance*Math.sin(arcUnit*index+c)
+					var imgElement=$(".colourful>.wrap").eq(i)
+					var leftPositionForImageCenter = middleX + distance*Math.cos(arcUnit*index-c)
+					var topPositionForImageCenter = middleY - distance*Math.sin(arcUnit*index-c)
 					//减去图片的框架
 					leftPositionForImageCenter -= imgWidth/2
 					topPositionForImageCenter  -= imgHeight/2
 					imgElement.css({'left':leftPositionForImageCenter,'top':topPositionForImageCenter})
 				}
 			}
-			t = setTimeout("setImg()",10)
+			t = setTimeout("setImg()",2000)
 		}
 
 		function mCenOver() {
@@ -96,6 +108,10 @@
 		function mCenOut() {
 			t = setTimeout("setImg()",10)
 		}
+		function chooseImg(i) {
+			alert('It works');
+			document.getElementById('BigImg').src="/src/img/lizhix2.jpg";
+		} 
 		</script>
 	</div>
 	<script type="text/javascript">
