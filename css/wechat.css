@@ -1,15 +1,14 @@
 #wechatinfo {
-	position:relative;
-	text-align:center;
-	display:inline;
+	width:35%;
 	float: left;
-	top:120px;
-	left:110px;
+	padding-top:14%;
+	padding-left:11%;
+	text-align: center;
 }
 #Profile {
-	outline-style: double;
-	outline-color: black;
-	outline-width: 5px; 
+	border:2px solid #fff;
+	box-shadow: 0 0 9px #ccc;
+	border-radius: 5px; 
 }
 .name {
 	color: #b56523;
@@ -23,12 +22,27 @@
 	color: #96E443;
 }
 #xcode {
-	position:relative;
-	float:right;
-	text-align:center;
-	right: 150px;
+	width:35%;
+	float: left;
+	padding-top:2%;
+	padding-left:11%;
+	text-align: center;
 }
 #xpic {
 	margin-top: 20px;
 	border:1em solid black;
+}
+
+@media screen and (max-width: 800px) {
+    #wechatinfo, #xcode {
+    	float:clear;
+        width: 80%;
+        margin: 2% auto;        
+    }
+    #wechatinfo {
+    	padding-top: 0;
+    }
+    #xcode {
+    	
+    }
 }

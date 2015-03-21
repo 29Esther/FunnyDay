@@ -5,31 +5,23 @@ body {
 }
 
 #head_pic {
-	height: 550px;
-	width:100%;
-	position:relative;
-    text-align:center;
-	background-color: #FFF;
+	height:0;
+	width:80%;
+    margin:0 auto;
+    overflow: hidden;
+    padding-bottom: 40%;
 }
 #say_hello {
-    position:relative;
-    margin:0 auto;
-    height:550px;
+    width:100%;
+    z-index: 20;
 }
-#cover2 {
-    width:900px;
-    top:210px;
-    position:absolute;
-    left:200px;
+.icon img{
+    width:20%;
 }
-.icon {
-	width:10%;
-	height: auto;
-}
-
 #contact{
-    text-align:center;
-    margin-top: 10px;
+    width:40%;
+    margin:0 auto;
+    padding-top: 2%;
 }
 #contact ul{
     list-style:none;
@@ -38,7 +30,7 @@ body {
     display:inline;
 }
 #contact li{
-    margin-right:40px;
+    margin-right:2%;
     display:inline;
 }
 #contact a:hover {

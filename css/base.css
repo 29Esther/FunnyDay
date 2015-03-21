@@ -1,5 +1,5 @@
 body{
-    font: 14px/24px "Microsoft YaHei","Arial",sans-serif;
+    font: 1vw/2vw "Microsoft YaHei","Arial",sans-serif;
     background:#ECF0F1;
     color: #222222;
     margin:0;
@@ -16,7 +16,7 @@ body{
     float:right;
 }
 #header {
-	width: 960px;
+	width: 80%;
 	margin: 0 auto;
 	overflow: hidden;
 	background-color: #feb94c;
@@ -25,12 +25,13 @@ body{
 	background-color: #feb94c;
 }
 #icon {
-	margin-top: 5px;
-	margin-left: 10px;
+	display: block;
+	float:left;
+	margin-top:0.5%;
 }
 #fr a {
 	color: #b56523;
-	font-size: 18px;
+	font-size: 2vw;
 	line-height: 60px;
 	display: inline-block;
 	margin-left: 2em;
@@ -41,14 +42,13 @@ body{
 	color: #ECF0F1;
 }
 #content {
-	width: 960px;
+	width: 80%;
 	margin: 0 auto;
-	overflow: hidden;
 }
 .slide-out-div {
 	background-color: #FFF;
 	width: 70px;
-	height: 190px;
+	height: auto;
 	z-index:100;
 }
 .slide-out-div ul{
