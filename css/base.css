@@ -13,7 +13,11 @@ body{
     float:left;
 }
 #fr {
-    float:right;
+    list-style:none;
+}
+ul li {
+	display: block;
+	float:right;
 }
 #header {
 	width: 80%;
@@ -29,7 +33,7 @@ body{
 	float:left;
 	margin-top:0.5%;
 }
-#fr a {
+#fr .linky, #menuIcon{
 	color: #b56523;
 	font-size: 2vw;
 	line-height: 60px;
@@ -40,6 +44,25 @@ body{
 #fr a:hover, #fr .active {
 	text-decoration: none;
 	color: #ECF0F1;
+}
+#menuIcon {
+    font-size: 10px;
+    display: none;
+}
+@media screen and (max-width: 800px) {
+
+    #fr .linky {
+        display: none;
+        padding: 0;
+        margin: 0 5px;
+    }
+
+    #menuIcon {
+        display: block;
+        text-align: right;
+        padding: 0 5px;
+        border-bottom: 1px #9c9c9c solid;
+    }
 }
 #content {
 	width: 80%;

@@ -13,13 +13,23 @@
 		<div id="headBox">
 			<div id="header">
 				<a href="index.html"><img id="icon" src="src/img/icon.png"/></a>
-				<nav id="fr">
-					<a href="Curriculum_Vitae.html"><b>Curriculum Vitae</b></a>
-					<a href="stories.html"><b>Stories</b></a>
-					<a href="#"><b>More Info..</b></a>
-				</nav>
+				<ul id="fr">
+					<a href="#" id="menuIcon">Ξ</a>
+					<li><a class="linky" href="Curriculum_Vitae.html"><b>Curriculum Vitae</b></a></li>
+					<li><a class="linky" href="stories.html"><b>Stories</b></a></li>
+					<li><a class="linky" href="#"><b>More Info..</b></a></li>
+				</ul>
 			</div>
 		</div>
+		<script type="text/javascript">
+        	$(function() {
+            	$("#menuIcon, ul li").click(function() {
+                	if ($("#menuIcon").is(":visible")) { //防止宽屏上点击
+                    	$("nav ul").toggle(300);
+                };
+            });
+        })
+</script>
 		<div id="content">
 			<div id="wechatinfo">
 				<img id="Profile" src="src/img/profile.png"/>
